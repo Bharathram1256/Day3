@@ -1,7 +1,10 @@
 num=int(input("Enter a Number"))
-i=0,rev=0
+i=0,rev=0,temp=num
 while (num!=0):
   rem=num%10
   rev=rev*10+rem
   num=num/10
-print(num)
+if num==temp:
+  print(num, "is palindrome")
+else:
+  print(num, "is not a Palindrome")
